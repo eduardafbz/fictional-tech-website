@@ -1,0 +1,135 @@
+/*Limpar formatações padrão*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 1em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: #e6e6e6;
+}
+
+/*
+ *** Layout ***
+*/
+
+#area-cabecalho { /*aqui o padding e o alinhamento foram feitos de forma geral, tanto para o logo quanto para o menu*/
+    background: #f7b600;
+    padding: 15px;
+    text-align: center;
+}
+
+#area-logo, #area-menu { /*aqui o padding foi feito tanto para a a´rea do logo, quanto para a área do menu, para que tenham espaço entre si*/
+    padding: 10px;
+}
+
+#area-principal {
+    width: 920px; /*muito utilizado*/
+    margin: 0 auto; /*margens automáticas: as laterais vão automaticamente para o centro da página*/
+    padding: 15px;
+}
+
+#area-postagens {
+    width: 660px;
+    float: left;
+}
+
+#area-lateral {
+    width: 240px;
+    float: right;
+}
+
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.conteudo-lateral {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.postagem-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+#links-laterais {
+    font-size: 0.8em;
+    padding: 5px;
+    a:hover {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+#area-rodape {
+    clear: both; /*apaga o fluxo dos elementos flutuantes*/
+    text-align: center;
+    background: #CCC;
+    padding: 15px;
+}
+
+/*
+ *** Formatações do menu ***
+*/
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+a:link, a:visited { 
+    color: #f7b600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#area-cabecalho a:link,#area-cabecalho a:visited { /*o id em azul é um seletor, ou seja, ele indica que somente nessa div será aplicado essas configurações de link*/
+    color: #FFF;
+    padding: 5px;
+}
+
+#area-cabecalho a:hover {
+    color: #f7b600;
+    background: #FFF;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/*
+ *** Formatações em geral ***
+*/
+
+h1 {
+    color: #4e4e4e;
+    font-size: 2.5em;
+}
+
+h2 {
+    color: #f7b600;
+}
+
+h3 {
+    color: #565656;
+    background: #CCC;
+    padding: 5px;
+}
+
+.branco {
+    color: white;
+}
+
+.data-postagem {
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block; 
+}
+
